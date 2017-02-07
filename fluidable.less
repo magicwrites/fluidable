@@ -70,11 +70,11 @@
 .fluidable (@columns);
 
 
-//	
+//
 //	Tablet and up
 //
 
-@media (min-width: @screenTablet) {
+@media (min-width: @screenTablet), print {
 
 	.container {
 		max-width: @screenTablet - (@gutterWidth * 2);
@@ -143,11 +143,11 @@
 
 }
 
-//	
+//
 //	Desktop and up
 //
 
-@media (min-width: @screenDesktop) {
+@media (min-width: @screenDesktop), print {
 
 	.container {
 		max-width: @screenDesktop  - (@gutterWidth * 2);
@@ -207,11 +207,11 @@
 }
 
 
-//	
+//
 //	Large desktop and up
 //
 
-@media (min-width: @screenLarge) {
+@media (min-width: @screenLarge), print {
 
 	.container {
 		max-width: @screenLarge  - (@gutterWidth * 2);
@@ -289,9 +289,9 @@
 	display: block;
 }
 
-.col-fixed-hd .col-content, 
-.col-fixed-landscape .col-content, 
-.col-fixed-square .col-content, 
+.col-fixed-hd .col-content,
+.col-fixed-landscape .col-content,
+.col-fixed-square .col-content,
 .col-fixed-portrait .col-content {
 	position: absolute;
 	top: 0; right: @gutterWidth / 2; bottom: 0; left: @gutterWidth / 2;
@@ -315,7 +315,7 @@
 }
 
 
-//	
+//
 //	Other
 //
 

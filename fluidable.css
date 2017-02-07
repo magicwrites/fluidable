@@ -102,7 +102,7 @@
   padding-right: 18px;
   padding-left: 18px;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px), print {
   .container {
     max-width: 696px;
     margin: 0 auto;
@@ -307,7 +307,7 @@
     content: " ";
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 992px), print {
   .container {
     max-width: 920px;
     margin: 0 auto;
@@ -502,7 +502,7 @@
     left: 0%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1200px), print {
   .container {
     max-width: 1128px;
     margin: 0 auto;

@@ -102,7 +102,7 @@ $screenLarge:   1200px;
 //  ------------------------------------------
 
 
-@media (min-width: $screenTablet) {
+@media (min-width: $screenTablet), print {
 
 	.container {
 		max-width: $screenTablet - ($gutterWidth * 2);
@@ -131,7 +131,7 @@ $screenLarge:   1200px;
 		}
 
 		// Pull
-		
+
 		.col-pull-#{$index} {
 			right: $columnWidth * $index;
 		}
@@ -161,7 +161,7 @@ $screenLarge:   1200px;
 //  ------------------------------------------
 
 
-@media (min-width: $screenDesktop) {
+@media (min-width: $screenDesktop), print {
 
 	.container {
 		max-width: $screenDesktop  - ($gutterWidth * 2);
@@ -210,7 +210,7 @@ $screenLarge:   1200px;
 //  ------------------------------------------
 
 
-@media (min-width: $screenLarge) {
+@media (min-width: $screenLarge), print {
 
 	.container {
 		max-width: $screenLarge  - ($gutterWidth * 2);
@@ -233,7 +233,7 @@ $screenLarge:   1200px;
 
 
 	@for $index from 0 through $columns {
-		
+
 		// Offset
 
 		.col-ld-offset-#{$index} {
@@ -249,7 +249,7 @@ $screenLarge:   1200px;
 		// Push
 		.col-ld-push-#{$index} {
 			left: $columnWidth * $index;
-		}	
+		}
 
 	}
 
@@ -276,9 +276,9 @@ $screenLarge:   1200px;
 	display: block;
 }
 
-.col-fixed-hd .col-content, 
-.col-fixed-landscape .col-content, 
-.col-fixed-square .col-content, 
+.col-fixed-hd .col-content,
+.col-fixed-landscape .col-content,
+.col-fixed-square .col-content,
 .col-fixed-portrait .col-content {
 	position: absolute;
 	top: 0; right: $gutterWidth / 2; bottom: 0; left: $gutterWidth / 2;
